@@ -241,6 +241,13 @@ Map how API endpoints connect.
 
 ---
 
+CUSTOM RULE:
+- fuzz only validated hypotheses
+- no blind fuzzing without signal
+- behavior-based testing first
+
+---
+
 ## Output:
 
 ```text id="a8"
