@@ -241,13 +241,6 @@ Map how API endpoints connect.
 
 ---
 
-CUSTOM RULE:
-- fuzz only validated hypotheses
-- no blind fuzzing without signal
-- behavior-based testing first
-
----
-
 ## Output:
 
 ```text id="a8"
@@ -283,6 +276,13 @@ validated_attack_surface.txt
 
 > Active Recon is not exploitation.
 > It is **system stress testing to reveal hidden logic.**
+
+---
+
+CUSTOM RULE:
+- fuzz only validated hypotheses
+- no blind fuzzing without signal
+- behavior-based testing first
 
 ---
 
