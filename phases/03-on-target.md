@@ -184,6 +184,13 @@ done
 
 ---
 
+CUSTOM ENHANCEMENT:
+- endpoint grouping by behavior (not URL)
+- JS-driven discovery prioritized over brute force
+- parameter inference before fuzzing
+
+---
+
 ## 4.3 Secret Discovery
 
 Search patterns:
