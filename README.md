@@ -1,157 +1,90 @@
-# 🧠 Recon Playbook
+# 🧠 Recon Playbook — Attack Surface Intelligence Framework
 
-> A structured reconnaissance methodology for bug bounty hunting and offensive security research.
-
----
-
-## 📌 Overview
-
-Recon Playbook is a **real-world reconnaissance framework** built from practical bug bounty experience.
-It focuses on transforming raw reconnaissance into a **systematic attack surface discovery process**.
-
-Instead of just listing tools, this project defines a **complete workflow**:
-
-* From passive intelligence gathering
-* To asset discovery and validation
-* To prioritization and deep attack surface mapping
-* To threat modeling and manual testing preparation
+A structured, signal-driven reconnaissance methodology for modern bug bounty and security research.
 
 ---
 
-## 🎯 Goals of this Project
+## 🎯 Scope
 
-* Build a **repeatable reconnaissance methodology**
-* Reduce randomness in bug bounty hunting
-* Turn recon into a **structured engineering process**
-* Document real-world patterns and findings
-* Provide reusable scripts and workflows
+This repository focuses exclusively on **reconnaissance and attack surface discovery**.
+
+It does NOT include exploitation or reporting.
 
 ---
 
-## 🧭 High-Level Workflow
+## 🧭 What This Project Does
 
-```
-Passive Recon
-      ↓
-Asset Discovery
-      ↓
-Validation & Enrichment
-      ↓
-Prioritization
-      ↓
-URL & Parameter Mining
-      ↓
-JavaScript Analysis
-      ↓
-Active Recon
-      ↓
-Threat Modeling
-      ↓
-Manual Testing
-```
+This framework transforms raw internet data into structured attack surface intelligence.
+
+It focuses on:
+
+- Asset discovery
+- Subdomain enumeration
+- Endpoint mapping
+- JavaScript intelligence extraction
+- Parameter discovery
+- Threat modeling
+- Active validation (non-exploitative)
 
 ---
 
-## 🧩 Core Philosophy
+## ⚙️ Methodology Overview
 
-This project is built on a simple idea:
+### Phase 1 — Passive Recon
+Wide asset discovery and OSINT gathering
 
-> Reconnaissance is not tool usage — it is decision-making.
+### Phase 2 — Narrow Recon
+Prioritization and filtering of assets
 
-Every step in this framework answers:
+### Phase 3 — On Target Recon
+Deep analysis of live systems (JS, APIs, parameters)
 
-* What do we know?
-* What can we infer?
-* What should we investigate next?
-* What is the highest-value target?
+### Phase 4 — Threat Modeling
+Building vulnerability hypotheses from attack surface
 
----
-
-## 📂 Repository Structure
-
-* `phases/` → Full recon methodology (step-by-step)
-* `docs/` → Concepts and explanations
-* `scripts/` → Automation utilities
-* `field-notes/` → Real-world observations & case studies
-* `diagrams/` → Workflow & architecture visuals
-* `examples/` → Sample outputs from recon stages
+### Phase 5 — Active Recon
+Validation of endpoints, parameters, and behavior
 
 ---
 
-## 🧪 What Makes This Different?
+## 🧠 Core Philosophy
 
-Most recon repositories look like this:
+> “Recon is not data collection — it is system understanding.”
 
-* Tools list
-* One-liner commands
-* Generic checklists
+This framework is built on:
 
-This project instead focuses on:
-
-✔ Real-world workflows
-✔ Attack surface thinking
-✔ Prioritization strategies
-✔ Pattern recognition
-✔ Experience-based recon logic
+- Signal-based recon (not tool-based)
+- Noise reduction before expansion
+- Hypothesis-driven validation
+- Depth over breadth
 
 ---
 
-## ⚙ Example Tools & Techniques (Non-exhaustive)
+## 📁 Structure
 
-* Subdomain Enumeration (subfinder, amass, findomain)
-* DNS & HTTP validation (dnsx, httpx)
-* Web crawling (katana, hakrawler)
-* Historical data mining (wayback, crt.sh)
-* JS analysis & secret discovery
-* Parameter extraction & fuzzing
-* Scoring-based asset prioritization
+phases/ → Recon methodology phases
+docs/ → Methodology + scope
+wordlists/ → Custom recon wordlists
+scripts/ → Automation scripts
+
 
 ---
 
-## 📊 Field Notes
+## 🚫 Out of Scope
 
-This repository includes real-world observations such as:
-
-* Recon patterns discovered during bug bounty engagements
-* Common misconfigurations in real systems
-* Hidden asset discovery techniques
-* JS-based endpoint extraction strategies
-* API recon heuristics
+- Exploitation
+- Payload development
+- Vulnerability chaining
+- Reporting workflows
 
 ---
 
-## 🧠 Target Audience
+## ⚡ Goal
 
-* Bug bounty hunters
-* Security researchers
-* AppSec engineers
-* Red team learners
-* Offensive security enthusiasts
+To build a **repeatable intelligence system** for understanding any web application attack surface.
 
 ---
 
-## 🚧 Status
+## 🧠 Author Note
 
-This project is actively evolving as a **living reconnaissance framework**.
-
-Future additions:
-
-* Cloud recon module
-* API recon expansion
-* Automation pipeline improvements
-* Advanced scoring models
-* AI-assisted recon workflows
-
----
-
-## 📜 License
-
-MIT License (recommended for open research sharing)
-
----
-
-## ⭐ Final Note
-
-This is not a collection of tools.
-
-It is a **way of thinking about reconnaissance**.
+This project is based on real-world bug bounty experience and optimized for efficiency, signal quality, and depth of analysis.
