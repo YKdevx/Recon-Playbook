@@ -71,6 +71,13 @@ grep -Ei "(api|graphql|rest|v[0-9])" live_services.txt > api_targets.txt
 
 ---
 
+CUSTOM FILTER LAYER (Yakan Methodology):
+- apply noise reduction first
+- apply wordlist-based enrichment
+- apply anomaly detection before scoring
+
+---
+
 ## 📊 Scoring Model
 
 Each asset gets a score based on exposure type:
